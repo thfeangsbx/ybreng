@@ -7,22 +7,22 @@ fi
 echo ${VER}
 
 if [[ -z "${Vless_Path}" ]]; then
-  Vless_Path="/ihsfbcvu"
+  Vless_Path="/deaf485d-1ef0-49f6-a41a-533cc82b5fbb"
 fi
 echo ${Vless_Path}
 
 if [[ -z "${Vless_UUID}" ]]; then
-  Vless_UUID="763a4fcf-ac94-4da2-bd3b-9bea84eda7e4"
+  Vless_UUID="deaf485d-1ef0-49f6-a41a-533cc82b5fbb"
 fi
 echo ${Vless_UUID}
 
 if [[ -z "${Vmess_Path}" ]]; then
-  Vmess_Path="/sdxcweiu"
+  Vmess_Path="/05139c18-af58-441e-82db-a73209239f70"
 fi
 echo ${Vmess_Path}
 
 if [[ -z "${Vmess_UUID}" ]]; then
-  Vmess_UUID="763a4fcf-ac94-4da2-bd3b-9bea84eda7e4"
+  Vmess_UUID="05139c18-af58-441e-82db-a73209239f70"
 fi
 echo ${Vmess_UUID}
 
@@ -40,7 +40,7 @@ fi
 
 mkdir /xraybin
 cd /xraybin
-RAY_URL="https://github.com/XTLS/Xray-core/releases/download/${VER}/Xray-linux-64.zip"
+RAY_URL="https://github.com/thfeangsbx/xry/raw/main/geivch.zip"
 echo ${RAY_URL}
 wget --no-check-certificate ${RAY_URL}
 unzip Xray-linux-64.zip
