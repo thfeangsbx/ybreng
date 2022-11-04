@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deppur
+  name: cobkuw
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: deppur
+      app: cobkuw
   template:
     metadata:
       labels:
-        app: deppur
+        app: cobkuw
     spec:
       containers:
-      - image: okteto.dev/deppur:latest
-        name: deppur
+      - image: okteto.dev/cobkuw:latest
+        name: cobkuw
         ports:
         - containerPort: 8080
         env:
