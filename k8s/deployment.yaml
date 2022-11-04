@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: reuigq
+  name: kubutw
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: reuigq
+      app: kubutw
   template:
     metadata:
       labels:
-        app: reuigq
+        app: kubutw
     spec:
       containers:
-      - image: okteto.dev/reuigq:latest
-        name: reuigq
+      - image: okteto.dev/kubutw:latest
+        name: kubutw
         ports:
         - containerPort: 8080
         env:
