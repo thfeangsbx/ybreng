@@ -1,13 +1,13 @@
 apiVersion: v1
-kind: Service
+kind: reuigq
 metadata:
-  name: sraybery
+  name: reuigq
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "sraybery"
+  - name: "reuigq"
     port: 8080
   selector:
-    app: sraybery
+    app: reuigq
