@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cobkuw
+  name: hkcjim
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cobkuw
+      app: hkcjim
   template:
     metadata:
       labels:
-        app: cobkuw
+        app: hkcjim
     spec:
       containers:
-      - image: okteto.dev/cobkuw:latest
-        name: cobkuw
+      - image: okteto.dev/hkcjim:latest
+        name: hkcjim
         ports:
         - containerPort: 8080
         env:
