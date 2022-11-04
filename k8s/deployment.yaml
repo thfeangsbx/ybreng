@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sraybery
+  name: reuigq
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sraybery
+      app: reuigq
   template:
     metadata:
       labels:
-        app: sraybery
+        app: reuigq
     spec:
       containers:
-      - image: okteto.dev/sraybery:latest
-        name: sraybery
+      - image: okteto.dev/reuigq:latest
+        name: reuigq
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.vecteezy.com"
         - name: Vless_UUID
-          value: "763a4fcf-ac94-4da2-bd3b-9bea84eda7e4"
+          value: "deaf485d-1ef0-49f6-a41a-533cc82b5fbb"
         - name: Vless_Path
-          value: "/ihsfbcvu"
+          value: "/deaf485d-1ef0-49f6-a41a-533cc82b5fbb"
         - name: Vmess_UUID
-          value: "763a4fcf-ac94-4da2-bd3b-9bea84eda7e4"
+          value: "05139c18-af58-441e-82db-a73209239f70"
         - name: Vmess_Path
-          value: "/sdxcweiu"
+          value: "/05139c18-af58-441e-82db-a73209239f70"
         - name: Share_Path
           value: "/Share204"
