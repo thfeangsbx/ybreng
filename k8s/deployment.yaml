@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sraybery
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sraybery
+  template:
+    metadata:
+      labels:
+        app: sraybery
+    spec:
+      containers:
+      - image: okteto.dev/sraybery:latest
+        name: sraybery
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: ProxySite
+          value: "www.vecteezy.com"
+        - name: Vless_UUID
+          value: "763a4fcf-ac94-4da2-bd3b-9bea84eda7e4"
+        - name: Vless_Path
+          value: "/ihsfbcvu"
+        - name: Vmess_UUID
+          value: "763a4fcf-ac94-4da2-bd3b-9bea84eda7e4"
+        - name: Vmess_Path
+          value: "/sdxcweiu"
+        - name: Share_Path
+          value: "/Share204"
